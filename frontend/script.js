@@ -12,6 +12,8 @@ document.getElementById('feedbackForm').addEventListener('submit', async (e) => 
     // PASTE YOUR RENDER LINK HERE
     const API_URL = "https://rahim2007-2.onrender.com";
 
+  form.addEventListener('submit', async function(e) {  // <-- Add 'async' right here!
+    e.preventDefault();
     try {
         const response = await fetch(API_URL, {
             method: 'POST',
