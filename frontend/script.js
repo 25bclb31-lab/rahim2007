@@ -30,4 +30,3 @@ document.getElementById('feedbackForm').addEventListener('submit', async (e) => 
         statusText.innerText = "Error connecting to server.";
     }
 });
-});
